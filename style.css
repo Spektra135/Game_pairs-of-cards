@@ -1,0 +1,114 @@
+.card-container,
+.button-start-container,
+.button-next-container,
+.form-container,
+.timer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.form-container {
+  justify-content: center;
+}
+
+.form {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  padding: 8px;
+  min-width: 422px;
+  height: 40px;
+  border: 1px solid #333;
+  box-sizing: border-box;
+  border-radius: 100px;
+}
+
+.card-container {
+  margin: 50px auto 20px auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.card-container--two-cards {
+  width: 310px;
+  height: 320px;
+}
+
+.card-container--four-cards {
+  width: 700px;
+  height: 700px;
+}
+
+.card-container--six-cards {
+  width: 690px;
+  height: 690px;
+}
+
+.card-container--eight-cards {
+  width: 625px;
+  height: 625px;
+}
+
+.card-container--ten-cards {
+  width: 760px;
+  height: 760px;
+}
+
+.card {
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #8bc7e0;
+}
+
+.card-container--two-cards .card,
+.card-container--four-cards .card {
+  height: 150px;
+  width: 150px;
+  padding-top: 45px;
+  font-size: 50px;
+}
+
+.card-container--six-cards .card {
+  height: 100px;
+  width: 100px;
+  padding-top: 25px;
+  font-size: 40px;
+}
+
+.card-container--eight-cards .card,
+.card-container--ten-cards .card {
+  height: 70px;
+  width: 70px;
+  padding-top: 20px;
+  font-size: 25px;
+}
+
+.button {
+  margin: 20px auto;
+  height: 70px;
+  width: 150px;
+  font-size: 16px;
+  background-color: #6fd17f;
+}
+
+.button-timer {
+  margin: 20px auto;
+  height: 70px;
+  width: 150px;
+  font-size: 16px;
+  background-color: #e99df5;
+  border: none;
+}
+
+.disabled,
+.disabled .card {
+  pointer-events: none;
+}
